@@ -1,0 +1,20 @@
+dataset:
+  name: "MovieLens"
+  data_dir: "./data_files"
+
+experiment:
+  run_name: "movielens_baseline"
+  model_name: "GraphSAGE Hetero Link Predictor"
+  output_dir: "./experiments/results"
+
+model:
+  hidden_channels: 64
+  out_channels: 64
+
+training:
+  epochs: 30
+  learning_rate: 0.005
+  weight_decay: 0.0001
+
+evaluation:
+  hits_k: 10
